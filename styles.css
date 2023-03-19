@@ -55,7 +55,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-	font-size: 16px;
+	font-size: 15px;
 	flex: 1;
 	border-top: solid 2px black;
     transition: all 0.5s;
@@ -271,6 +271,10 @@ background-color: var(--success);
 
 /* SECTION 5 */
 /* SECTION PROJETS */
+.projets .desscrisption span{
+    background-color: lemonchiffon;
+    /* text-decoration: underline; */
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .projets{
     position: relative;
@@ -350,6 +354,7 @@ background-color: var(--success);
             color: black;
             padding-left: 13%;
             padding-right: 13%;
+            padding-bottom: 50px;
             font-size: 20px;
         }
         .block button{
@@ -428,7 +433,7 @@ background-color: var(--success);
 .title{
     background-color: #10202C;    
 }
-.description{
+.desscription{
     padding: 10px;
 }
 .title h4{
