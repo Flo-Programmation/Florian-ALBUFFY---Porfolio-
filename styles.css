@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body{
     position: relative;
     margin: 0;
     height: 100vh;
-    background-color: white;
+    background-color: #E5E5E5E5;
 }
 a{
     text-decoration: none;
@@ -77,7 +78,7 @@ nav a:hover{
     margin-right: 10%;
     margin-left: 10%;
         justify-content: space-around;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: row;
         align-items: center;
 }
@@ -90,8 +91,8 @@ nav a:hover{
     font-size: 90px;
 }
 .text-top p{
-    font-size: 25px;
-    font-family: 'Pompiere', cursive;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 .text-top button{
@@ -100,9 +101,8 @@ nav a:hover{
         align-items: center;
     height: 40px;
     font-size: 16px;
-    background-color: rgb(249, 255, 170);
+    background-color: #f3ffea;
     border-radius: 10px;
-    border-color: rgb(249, 255, 170);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -118,7 +118,7 @@ nav a:hover{
     max-width: -webkit-fill-available;
 }
 .pdp-img img{
-    width: -webkit-fill-available;
+    width: 740px;
 }
 
 .text-top button{
@@ -279,17 +279,13 @@ background-color: var(--success);
 }
 
         button{
-        background-color: transparent;
-        border: outset;
-        font-size: 20px;
-        color: white;
-        font-family: cursive;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-}
+            background-color: transparent;
+            border: transparent;
+            font-size: 50px;
+            color: white;            
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
             button:hover{
             cursor: pointer;
             }
@@ -301,7 +297,7 @@ background-color: var(--success);
             top: 0;
             text-align: center;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             flex-direction: column;
             background-color: #10202cd8;
@@ -334,16 +330,25 @@ background-color: var(--success);
             margin-top: 50px;
             max-width: 1250px;
             max-height: 720px;
-            overflow-y: scroll;
             scrollbar-color: rebeccapurple green;
             scrollbar-width: thin;
-        }
+            overflow-y: scroll;
+            background-color: white;
+            box-shadow: 3px 3px 5px black;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+}
         .block h1{
             color: white;
             font-size: 50px;
         }
         .block p{
-            color: white;
+            color: black;
+            padding-left: 13%;
+            padding-right: 13%;
             font-size: 20px;
         }
         .block button{
@@ -353,6 +358,7 @@ background-color: var(--success);
         .photo img{
             width: 290px;
             height: 290px;
+            padding: 10px;
         }
 
 
@@ -511,6 +517,64 @@ background-color: var(--success);
 
 
 /* PARTIE RESPONSIVES */
+@media (max-width:1440px){
+    nav{
+        width: 70%;
+    }
+    .pdp-img{
+        width: 500px;
+    }
+    .pdp-img img{
+        width: inherit;
+    }
+}
+
+
+@media (max-width:1340px){
+    .top-page{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width:1212px){
+    .link{
+        font-size: 11px;
+    }
+    .pdp-img{
+        width: 450px;
+    }
+    .text-top h1{
+        font-size: 60px;
+    }
+    .text-top p{
+        font-size: 16px;
+    }
+    .block{
+        margin: 50px;
+    }
+}
+
+
+@media (max-width:940px){
+    .top-page{
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+    .text-top{
+        text-align: center;
+        width: auto;
+    }
+    .text-top p{
+        text-align: justify;
+        word-spacing: 10px;
+    }
+    .top-page button{
+        margin: auto;
+    }
+}
+
+
 @media (max-width:425px) {
     nav{
         width: auto;
@@ -519,11 +583,19 @@ background-color: var(--success);
         font-size: 6px;
         padding: 0;
     }
+    .top-page{
+        flex-wrap: nowrap;
+    }
     .text-top h1{
         font-size: 60px;
+        margin: 0;
+        margin-top: 35px;
     }
     .text-top p{
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .pdp-img {
+        width: 340px;
     }
     .text-top button{
         background-color: none;
@@ -537,18 +609,19 @@ background-color: var(--success);
         margin-left: 0;
         width: auto;
     }
-    .competence{
-        height: auto;
-    }
-    .container-app{
-        padding: 10px;
-    }
-    .containe-skill{
-        padding: 10px;
-    }
+
+    .text-intro p{font-size: 12px;}
+    .competence{height: auto;}
+    .container-app{padding: 25px;}
+    .containe-skill{padding: 30px;}
     .containe-skill h1{
         padding-top: 20px;
+        font-size: initial;
     }
+    .txt-description-comp {font-size: 12px;}
+    .progressbar-wrapper {height: 10px;}
+    .progressbar{height: 10px;}
+
     .projets h1{
         padding-top: 50px;
         font-size: 20px;
@@ -564,8 +637,8 @@ background-color: var(--success);
             padding-top: 10px;
         }
         .photo img {
-            width: 155px;
-            height: 184px;
+            width: 240px;
+            height: 320px;
         }
         .photo video{
             padding-top: 10px;
@@ -591,7 +664,10 @@ background-color: var(--success);
     }
 
     .block p {
-        color: white;
-        font-size: 13px;
+        color: black;
+        font-size: 16px;
+        margin: 10px;
+        word-spacing: 7px;
+        text-align: justify;
     }
 }
