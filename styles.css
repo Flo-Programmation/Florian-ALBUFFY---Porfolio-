@@ -525,7 +525,7 @@ background-color: var(--success);
         width: 500px;
     }
     .pdp-img img{
-        width: inherit;
+        width: -webkit-fill-available;
     }
 }
 
