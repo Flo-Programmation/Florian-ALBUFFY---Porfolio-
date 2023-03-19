@@ -170,7 +170,8 @@ nav a:hover{
     text-align: center;
     color: white;
     width: 20px;
-    font-size: 16px;
+    font-size: 15px;
+    text-shadow: 1px 2px 5px black;
     outline: none
 }
 
