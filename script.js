@@ -36,7 +36,7 @@ function getAge(date) {
     var age = new Date(diff); 
     return Math.abs(age.getUTCFullYear() - 1970);
 }
-var mon_age = document.getElementById('my_age').value=getAge(new Date(2005, 03, 23)); //Date(année, mois, jour)
+var mon_age = document.getElementById('my_age').value=getAge(new Date(2004, 03, 23)); //Date(année, mois, jour)
 
 
 				
@@ -62,28 +62,6 @@ var close = document.getElementById('fermer');
 				document.getElementById('detail').style.visibility="visible";				
 			}
 		}, true);
-		// var action2 = document.getElementById('btn2');
-        // var close2 = document.getElementById('fermer2');
-        //     action2.addEventListener("click", function(){
-        //         var etat = document.getElementById('detail2').style.visibility;
-        //         if(etat=="visible"){
-        //         document.getElementById('detail2').style.visibility="hidden";
-        //         }
-        //         else{
-        //             document.getElementById('detail2').style.visibility="visible";	
-		// 			document.documentElement.style.overflow = 'hidden';			
-        //         }
-        //     }, true);
-        //         close2.addEventListener("click", function(){
-        //             var etat = document.getElementById('detail2').style.visibility;
-        //             if(etat=="visible"){
-        //             document.getElementById('detail2').style.visibility="hidden";
-		// 			document.documentElement.style.overflow = 'visible';
-        //             }
-        //             else{
-        //                 document.getElementById('detail2').style.visibility="visible";				
-        //             }
-        //         }, true);
                 var action3 = document.getElementById('btn3');
                 var close3 = document.getElementById('fermer3');
                     action3.addEventListener("click", function(){
