@@ -36,7 +36,7 @@ function getAge(date) {
     var age = new Date(diff); 
     return Math.abs(age.getUTCFullYear() - 1970);
 }
-var mon_age = document.getElementById('my_age').value=getAge(new Date(2004, 03, 23)); //Date(année, mois, jour)
+var mon_age = document.getElementById('my_age').value=getAge(new Date(2005, 03, 23)); //Date(année, mois, jour)
 
 
 				
